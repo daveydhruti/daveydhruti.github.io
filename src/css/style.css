@@ -6,7 +6,7 @@
 
 body {
   font-family: system-ui, sans-serif;
-  max-width: 800px;
+  /* max-width: 800px; */
   margin: 0 auto;
   padding: 2rem;
   line-height: 1.6;
@@ -22,13 +22,24 @@ h1 {
   font-family: ui-serif, serif;
 }
 
-.container {
-  max-width: 600px;
+h2 {
+  font-family: ui-serif, serif;
+}
+
+.layout {
+  max-width: 1200px;
   margin: 0 auto;
-  background: #faf9f5;
-  padding: 3rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.sidebar {
+  width: 280px;
+  background: white;
+  padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: fit-content;
 }
 
 .profile-header {
@@ -45,7 +56,7 @@ h1 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -55,33 +66,104 @@ h1 {
   font-weight: normal;
 }
 
+.about {
+  color: #555;
+}
+
+.about h2,
+.social-links h2 {
+  font-size: 1.1rem;
+  margin-top: 0.75rem;
+  color: #333;
+}
+
 .social-links {
   display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  margin-top: 1rem;
+  flex-direction: column;
+}
+
+.social-links a {
+  gap: 0.4rem;
+  margin: 0 1rem;
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 0.95rem;
 }
 
 .social-links a:hover {
   text-decoration: underline;
 }
 
-.about {
-  text-align: center;
-  color: #555;
-}
-
-.social-links a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #0066cc;
-  text-decoration: none;
-  font-weight: 500;
-}
-
 .social-links .icon {
   width: 20px;
   height: 20px;
   vertical-align: middle;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 2rem;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #666;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+}
+
+.tab-button:hover {
+  color: #333;
+}
+
+.tab-button.active {
+  color: #0066cc;
+  border-bottom-color: #0066cc;
+}
+
+.tab-content {
+  min-height: 400px;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+.tab-panel h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.tab-panel p {
+  color: #555;
+  line-height: 1.8;
+}
+
+.tab-panel a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.tab-panel a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
 }

@@ -3,28 +3,35 @@ layout: base.njk
 title: Dhruti Davey
 ---
 
-<div class="container" >
-  <header class="profile-header">
-    <img src="/images/profile.jpg" alt="Dhruti Davey" class="profile-pic">
-    <h1>Dhruti Davey <span class="pronouns">(she/her)</span></h1>
+<div class="layout" >
+   <aside class="sidebar">
+    <div class="profile-header">
+      <img src="/images/profile.jpg" alt="Dhruti Davey" class="profile-pic" />
+      <h1>Dhruti Davey <span class="pronouns">(she/her)</span></h1>
+    </div>
+
+    <section class="about">
+      <h2>About</h2>
+      <p>
+        I am a computer scientist with interests in AI, cybersecurity and software. I build things, 
+        break things, and spend a lot of time trying to over-optimize them. Most recently, I've 
+        completed my master's in Cybersecurity and AI. Always learning something new. 
+      </p>
+    </section>
+
     <nav class="social-links">
+      <h2>Links</h2>
+      <div class="link-rows">
       <a href="https://github.com/daveydhruti" target="_blank">
-        {# <img src="/images/github-icon.svg" alt="GitHub" class="icon"> #}
+        <img src="/images/github-icon.svg" alt="GitHub" class="icon">
         GitHub
       </a>
-      <a href="https://linkedin.com/in/dhruti-davey" target="_blank">
-        {# <img src="/images/linkedin-icon.png" alt="LinkedIn" class="icon"> #}
+      <a href="https://linkedin.com/in/daveydhruti" target="_blank">
+        <img src="/images/linkedin-icon.png" alt="LinkedIn" class="icon">   
         LinkedIn
       </a>
-      {# <a href="https://daveydhruti.github.io/blog" target="_blank">Blog</a> #}
-      <a href="under_progress">Blog</a>
+    </div>
     </nav>
-  </header>
-  <section class="about">
-    <p>
-      I am a computer scientist with interests in AI, cybersecurity and software. I build things, 
-      break things, and spend a lot of time trying to over-optimize them. Most recently, I've 
-      completed my master's in Cybersecurity and AI. Always learning something new.
-    </p>
-  </section>
+  </aside>
+
 </div>
