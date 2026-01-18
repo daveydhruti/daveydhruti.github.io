@@ -10,7 +10,12 @@ body {
   margin: 0 auto;
   padding: 2rem;
   line-height: 1.6;
-  background-color: #f0eee6;
+  background: 
+    linear-gradient(rgba(250, 249, 245, 0.9), rgba(250, 249, 245, 0.9)),
+    url('/images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 h1 {
