@@ -6,50 +6,29 @@
 
 body {
   font-family: system-ui, sans-serif;
+  line-height: 1.6;
   margin: 0 auto;
   padding: 2rem;
-  line-height: 1.6;
   background: 
-    linear-gradient(rgba(250, 249, 245, 0.9), rgba(250, 249, 245, 0.9)),
+    linear-gradient(rgba(250, 249, 245, 0.82), rgba(250, 249, 245, 0.55)),
     url('/images/background.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
 h1 {
   font-family: ui-serif, serif;
-}
-
-h2 {
-  font-family: ui-serif, serif;
-}
-
-.layout {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  gap: 2rem;
-}
-
-.sidebar {
-  width: 280px;
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  height: fit-content;
-  position: sticky;
-  top: 2rem;
-  align-self: flex-start;
-}
-
-.main-content {
-  flex: 1;
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
 }
 
 .profile-header {
@@ -65,11 +44,6 @@ h2 {
   margin-bottom: 1rem;
 }
 
-h1 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
 .pronouns {
   font-size: 0.9rem;
   color: #666;
@@ -81,18 +55,17 @@ h1 {
   border-bottom: 1px solid #e0e0e0;
 }
 
-.social-links h2 {
-  font-size: 1.1rem;
-  margin-bottom: 0.75rem;
-  color: #333;
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid #e0e0e0;
 }
 
 .social-links {
   display: flex;
   flex-direction: column;
   gap: 0;
-  border-top: 1px solid #e0e0e0;
-  border-bottom: 1px solid #e0e0e0;
 }
 
 .social-links h2 {
@@ -108,12 +81,7 @@ h1 {
   text-decoration: none;
   font-size: 0.95rem;
   border-radius: 6px;
-  transition: background-color 0.2s;
 }
-
-/* .social-link:hover {
-  background-color: #f5f5f5;
-} */
 
 .social-link svg {
   flex-shrink: 0;
@@ -143,74 +111,6 @@ h1 {
 .social-value a:hover {
   text-decoration: underline;
   color: #0066cc;
-}
-.tabs {
-  display: flex;
-  gap: 0.5rem;
-  border-bottom: 2px solid #e0e0e0;
-  margin-bottom: 2rem;
-}
-
-.tab-button {
-  background: none;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  color: #666;
-  border-bottom: 3px solid transparent;
-  transition: all 0.3s;
-}
-
-.tab-button:hover {
-  color: #333;
-}
-
-.tab-button.active {
-  color: #0066cc;
-  border-bottom-color: #0066cc;
-}
-
-.tab-content {
-  min-height: 400px;
-}
-
-.tab-panel {
-  display: none;
-}
-
-.tab-panel.active {
-  display: block;
-}
-
-.about h2,
-.tab-panel h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-.tab-panel p {
-  color: #555;
-  line-height: 1.8;
-}
-
-.tab-panel a {
-  color: #0066cc;
-  text-decoration: none;
-}
-
-.tab-panel a:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-  .layout {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
-  }
 }
 
 .footer {
