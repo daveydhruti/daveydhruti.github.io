@@ -4,7 +4,7 @@ A portfolio website built with [11ty](https://www.11ty.dev/). Still under develo
 ## Features
 <!-- - Responsive two-column layout (sidebar + main content) -->
 <!-- - Tabbed interface for Resume and Blog sections -->
-- Responsive sidebar with bioo and socials
+- Container with bio and socials
 - Mobile-friendly design
 
 ## Getting Started
