@@ -3,67 +3,446 @@ layout: base.njk
 title: Dhruti Davey
 ---
 
-<div class="container">
-  <div class="profile-header">
-    <img src="/images/profile.jpg" alt="Dhruti Davey" class="profile-pic">
-    <h1>Dhruti Davey <span class="pronouns">(she/her)</span></h1>
-  </div>
-  <section class="about">
-    <p>
-      I am a recent MSc graduate in Cybersecurity and Artificial Intelligence from the University of Sheffield, holding a BSc (Hons) in Computer Science from Heriot-Watt University in Dubai. I am interested in cybersecurity, AI, and software development, and I am currently exploring neuromorphic computing. Always learning something new. 
-    </p>
-  </section>
-  <nav class="social-links">
-    <div class="social-link">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
-        <circle cx="12" cy="10" r="3"/>
-      </svg>
-      <div class="social-text">
-        <span class="social-label">Location</span>
-        <span class="social-value">Sheffield, UK</span>
-      </div>
+<div class="layout">
+
+  <!-- ── LEFT: sticky profile card ── -->
+  <aside class="profile-card">
+    <div class="profile-header">
+      <img src="{{ '/images/profile.jpg' | url }}" alt="Dhruti Davey" class="profile-pic">
+      <h1>Dhruti Davey <span class="pronouns">(she/her)</span></h1>
     </div>
-    <div class="social-link">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <rect width="20" height="16" x="2" y="4" rx="2"/>
-        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-      </svg>
-      <div class="social-text">
-        <span class="social-label">Email</span>
-        <span class="social-value">
-        <a href="mailto:daveydhruti@duck.com">daveydhruti@duck.com</a>
-        </span>
+
+    <nav class="social-links">
+      <div class="social-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        <div class="social-text">
+          <span class="social-label">Location</span>
+          <span class="social-value">Sheffield, UK</span>
+        </div>
       </div>
-    </div>
-    <div class="social-link">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
-        <path d="M9 18c-4.51 2-5-2-7-2"/>
-      </svg>
-      <div class="social-text">
-        <span class="social-label">GitHub</span>
-        <span class="social-value">
-          <a href="https://github.com/daveydhruti" target="_blank">
-            @daveydhruti
-          </a>
-        </span>
+
+      <div class="social-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="20" height="16" x="2" y="4" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        <div class="social-text">
+          <span class="social-label">Email</span>
+          <span class="social-value">
+            <a href="mailto:daveydhruti@duck.com">daveydhruti@duck.com</a>
+          </span>
+        </div>
       </div>
-    </div>
-    <div class="social-link">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-        <rect width="4" height="12" x="2" y="9"/>
-        <circle cx="4" cy="4" r="2"/>
-      </svg>
-      <div class="social-text">
-        <span class="social-label">LinkedIn</span>
-        <span class="social-value">
-          <a href="https://linkedin.com/in/daveydhruti" target="_blank">
-            in/daveydhruti
-          </a>
-        </span>
+
+      <div class="social-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+          <path d="M9 18c-4.51 2-5-2-7-2"/>
+        </svg>
+        <div class="social-text">
+          <span class="social-label">GitHub</span>
+          <span class="social-value">
+            <a href="https://github.com/daveydhruti" target="_blank">@daveydhruti</a>
+          </span>
+        </div>
       </div>
+
+      <div class="social-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+          <rect width="4" height="12" x="2" y="9"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+        <div class="social-text">
+          <span class="social-label">LinkedIn</span>
+          <span class="social-value">
+            <a href="https://linkedin.com/in/daveydhruti" target="_blank">in/daveydhruti</a>
+          </span>
+        </div>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- ── RIGHT: tabbed content card ── -->
+  <main class="content-card">
+    <div class="tabs" role="tablist">
+      <button class="tab-btn active" role="tab" aria-selected="true"  data-tab="about">About</button>
+      <!-- <button class="tab-btn"        role="tab" aria-selected="false" data-tab="projects">Projects</button> -->
+      <!-- <button class="tab-btn"        role="tab" aria-selected="false" data-tab="blog">Blog</button> -->
+      <button class="tab-btn"        role="tab" aria-selected="false" data-tab="courses">Courses</button>
     </div>
-  </nav>
-</div> 
+
+    <div class="tab-panels">
+
+      <!-- About -->
+      <section class="tab-panel active" id="tab-about" role="tabpanel">
+        <h2>About me</h2>
+        <p>
+          I recently graduated from the University of Sheffield, where I did my Masters in Cybersecurity and AI. I'm interested in learning more about Neuromorphic Computing.  
+        </p>
+        <div style="margin: 1.5rem 0;">
+          <svg width="100%" viewBox="0 0 680 260" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <style>
+                .pulse  { animation: pulse 3s ease-in-out infinite; }
+                .pulse2 { animation: pulse 3s ease-in-out infinite 0.6s; }
+                .pulse3 { animation: pulse 3s ease-in-out infinite 1.2s; }
+                .pulse4 { animation: pulse 3s ease-in-out infinite 1.8s; }
+                .pulse5 { animation: pulse 3s ease-in-out infinite 2.4s; }
+                @keyframes pulse {
+                  0%, 100% { r: 10; opacity: 0.5; }
+                  50% { r: 13; opacity: 1; }
+                }
+                @keyframes travel {
+                  0% { opacity: 0; }
+                  10% { opacity: 1; }
+                  90% { opacity: 1; }
+                  100% { opacity: 0; }
+                }
+                .edge        { stroke: #e55c83; stroke-width: 0.75; opacity: 0.18; fill: none; }
+                .edge-active { stroke: #e55c83; stroke-width: 1;    opacity: 0.5;  fill: none; }
+                .node-outer  { fill: none; stroke: #e55c83; stroke-width: 1; opacity: 0.35; }
+                .node-inner  { fill: #e55c83; }
+                .dot         { fill: #e55c83; }
+              </style>
+              <path id="path1" d="M100,110 L280,100 L460,160 L600,105"/>
+              <path id="path2" d="M100,160 L280,200 L460,110 L600,105"/>
+              <path id="path3" d="M100,60  L280,150 L460,60  L600,170"/>
+              <path id="path4" d="M100,210 L280,50  L460,210 L600,105"/>
+              <path id="path5" d="M100,110 L280,150 L460,160 L600,170"/>
+            </defs>
+
+            <!-- Layer 1 → Layer 2 edges -->
+            <line class="edge" x1="100" y1="60"  x2="280" y2="50"/><line class="edge" x1="100" y1="60"  x2="280" y2="100"/>
+            <line class="edge" x1="100" y1="60"  x2="280" y2="150"/><line class="edge" x1="100" y1="60"  x2="280" y2="200"/>
+            <line class="edge" x1="100" y1="110" x2="280" y2="50"/><line class="edge" x1="100" y1="110" x2="280" y2="100"/>
+            <line class="edge" x1="100" y1="110" x2="280" y2="150"/><line class="edge" x1="100" y1="110" x2="280" y2="200"/>
+            <line class="edge" x1="100" y1="160" x2="280" y2="50"/><line class="edge" x1="100" y1="160" x2="280" y2="100"/>
+            <line class="edge" x1="100" y1="160" x2="280" y2="150"/><line class="edge" x1="100" y1="160" x2="280" y2="200"/>
+            <line class="edge" x1="100" y1="210" x2="280" y2="50"/><line class="edge" x1="100" y1="210" x2="280" y2="100"/>
+            <line class="edge" x1="100" y1="210" x2="280" y2="150"/><line class="edge" x1="100" y1="210" x2="280" y2="200"/>
+
+            <!-- Layer 2 → Layer 3 edges -->
+            <line class="edge" x1="280" y1="50"  x2="460" y2="60"/><line class="edge" x1="280" y1="50"  x2="460" y2="110"/>
+            <line class="edge" x1="280" y1="50"  x2="460" y2="160"/><line class="edge" x1="280" y1="50"  x2="460" y2="210"/>
+            <line class="edge" x1="280" y1="100" x2="460" y2="60"/><line class="edge" x1="280" y1="100" x2="460" y2="110"/>
+            <line class="edge" x1="280" y1="100" x2="460" y2="160"/><line class="edge" x1="280" y1="100" x2="460" y2="210"/>
+            <line class="edge" x1="280" y1="150" x2="460" y2="60"/><line class="edge" x1="280" y1="150" x2="460" y2="110"/>
+            <line class="edge" x1="280" y1="150" x2="460" y2="160"/><line class="edge" x1="280" y1="150" x2="460" y2="210"/>
+            <line class="edge" x1="280" y1="200" x2="460" y2="60"/><line class="edge" x1="280" y1="200" x2="460" y2="110"/>
+            <line class="edge" x1="280" y1="200" x2="460" y2="160"/><line class="edge" x1="280" y1="200" x2="460" y2="210"/>
+
+            <!-- Layer 3 → Output edges -->
+            <line class="edge-active" x1="460" y1="60"  x2="600" y2="105"/>
+            <line class="edge-active" x1="460" y1="110" x2="600" y2="105"/>
+            <line class="edge-active" x1="460" y1="160" x2="600" y2="105"/>
+            <line class="edge-active" x1="460" y1="210" x2="600" y2="170"/>
+            <line class="edge"        x1="460" y1="60"  x2="600" y2="170"/>
+            <line class="edge"        x1="460" y1="110" x2="600" y2="170"/>
+            <line class="edge"        x1="460" y1="160" x2="600" y2="170"/>
+            <line class="edge"        x1="460" y1="210" x2="600" y2="105"/>
+
+            <!-- Travelling signal dots -->
+            <circle class="dot" r="3"><animateMotion dur="3s" repeatCount="indefinite" begin="0s"><mpath href="#path1"/></animateMotion></circle>
+            <circle class="dot" r="3"><animateMotion dur="3s" repeatCount="indefinite" begin="0.7s"><mpath href="#path2"/></animateMotion></circle>
+            <circle class="dot" r="3"><animateMotion dur="3s" repeatCount="indefinite" begin="1.4s"><mpath href="#path3"/></animateMotion></circle>
+            <circle class="dot" r="3"><animateMotion dur="3s" repeatCount="indefinite" begin="0.3s"><mpath href="#path4"/></animateMotion></circle>
+            <circle class="dot" r="3"><animateMotion dur="3s" repeatCount="indefinite" begin="1s"><mpath href="#path5"/></animateMotion></circle>
+
+            <!-- Layer 1 nodes -->
+            <circle class="node-outer pulse"  cx="100" cy="60"  r="10"/><circle class="node-inner pulse"  cx="100" cy="60"  r="6" opacity="0.5"/>
+            <circle class="node-outer pulse2" cx="100" cy="110" r="10"/><circle class="node-inner pulse2" cx="100" cy="110" r="6" opacity="0.5"/>
+            <circle class="node-outer pulse3" cx="100" cy="160" r="10"/><circle class="node-inner pulse3" cx="100" cy="160" r="6" opacity="0.5"/>
+            <circle class="node-outer pulse4" cx="100" cy="210" r="10"/><circle class="node-inner pulse4" cx="100" cy="210" r="6" opacity="0.5"/>
+
+            <!-- Layer 2 nodes -->
+            <circle class="node-outer pulse3" cx="280" cy="50"  r="10"/><circle class="node-inner pulse3" cx="280" cy="50"  r="6" opacity="0.5"/>
+            <circle class="node-outer pulse"  cx="280" cy="100" r="10"/><circle class="node-inner pulse"  cx="280" cy="100" r="6" opacity="0.5"/>
+            <circle class="node-outer pulse5" cx="280" cy="150" r="10"/><circle class="node-inner pulse5" cx="280" cy="150" r="6" opacity="0.5"/>
+            <circle class="node-outer pulse2" cx="280" cy="200" r="10"/><circle class="node-inner pulse2" cx="280" cy="200" r="6" opacity="0.5"/>
+
+            <!-- Layer 3 nodes -->
+            <circle class="node-outer pulse2" cx="460" cy="60"  r="10"/><circle class="node-inner pulse2" cx="460" cy="60"  r="6" opacity="0.5"/>
+            <circle class="node-outer pulse4" cx="460" cy="110" r="10"/><circle class="node-inner pulse4" cx="460" cy="110" r="6" opacity="0.5"/>
+            <circle class="node-outer pulse"  cx="460" cy="160" r="10"/><circle class="node-inner pulse"  cx="460" cy="160" r="6" opacity="0.5"/>
+            <circle class="node-outer pulse3" cx="460" cy="210" r="10"/><circle class="node-inner pulse3" cx="460" cy="210" r="6" opacity="0.5"/>
+
+            <!-- Output nodes -->
+            <circle class="node-outer pulse"  cx="600" cy="105" r="12"/><circle class="node-inner pulse"  cx="600" cy="105" r="7" opacity="0.7"/>
+            <circle class="node-outer pulse3" cx="600" cy="170" r="12"/><circle class="node-inner pulse3" cx="600" cy="170" r="7" opacity="0.7"/>
+          </svg>
+        </div>
+
+        <p style="text-align: center; font-size: 0.78rem; color: #999; margin-top: 0.5rem; margin-bottom: 0; font-style: italic;">
+          Every decision you've made was shaped by something like this. Well, more or less.
+        </p>
+      </section>
+
+      <!-- Courses -->
+      <section class="tab-panel" id="tab-courses" role="tabpanel">
+        <h2>Courses</h2>
+        <p>
+        These are the modules I completed during my studies.
+        </p> 
+        <!-- MSc -->
+        <div class="degree-block">
+          <div class="degree-header">
+            <div>
+              <span class="degree-title">MSc Cybersecurity and Artificial Intelligence</span>
+              <span class="degree-school">Heriot-Watt University &middot; Sept. 2024 – Nov. 2025</span>
+              <span class="degree-award">Distinction</span>
+            </div>
+          </div>
+
+          <div class="degree-year">
+            <span class="degree-year-label">Semester 1</span>
+            <ul class="module-list">
+              <li>COM6017 Cyber Threat Hunting and Digital Forensics</li>
+              <li>COM6509 Machine Learning and Adaptive Intelligence</li>
+              <li>COM6115 Text Processing</li>
+              <li>COM6014 Fundamental Security Properties and Mechanisms</li>
+            </ul>
+          </div>
+
+          <div class="degree-year">
+            <span class="degree-year-label">Semester 2</span>
+            <ul class="module-list">
+              <li>COM6513 Natural Language Processing</li>
+              <li>COM6015 Development of Secure Software</li>
+              <li>COM6017 Security of Control and Embedded Systems</li>
+              <li>COM6012 Scalable Machine Learning</li>
+            </ul>
+          </div>
+
+          <div class="degree-year">
+            <span class="degree-year-label">Semesters 2 &amp; 3</span>
+            <ul class="module-list">
+              <li>COM6016 Cybersecurity and AI Dissertation Project</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- BSc -->
+        <div class="degree-block">
+          <div class="degree-header">
+            <div>
+              <span class="degree-title">BSc Computer Science (Artificial Intelligence)</span>
+              <span class="degree-school">Heriot-Watt University &middot; Sept. 2021 – July 2024</span>
+              <span class="degree-award">First-Class Honours</span>
+            </div>
+          </div>
+
+          <div class="degree-year">
+            <span class="degree-year-label">Year 1</span>
+            <ul class="module-list">
+              <li class="module-apl">Direct entry via APL — 120 credits recognised (SCQF L7)</li>
+            </ul>
+          </div>
+
+          <div class="degree-year">
+            <span class="degree-year-label">Year 2 &middot; Semester 1</span>
+            <ul class="module-list">
+              <li><span class="module-code">F28ED</span> User-Centred Experimental Design</li>
+              <li><span class="module-code">F28PL</span> Programming Languages</li>
+              <li><span class="module-code">F28SG</span> Introduction to Data Structures &amp; Algorithms</li>
+              <li><span class="module-code">F28WP</span> Web Programming</li>
+            </ul>
+          </div>
+
+          <div class="degree-year">
+            <span class="degree-year-label">Year 2 &middot; Semester 2</span>
+            <ul class="module-list">
+              <li><span class="module-code">F28DA</span> Data Structures and Algorithms</li>
+              <li><span class="module-code">F28DM</span> Database Management Systems</li>
+              <li><span class="module-code">F28HS</span> Hardware-Software Interface</li>
+              <li><span class="module-code">F28SD</span> Introduction to Software Engineering</li>
+            </ul>
+          </div>
+
+          <div class="degree-year">
+            <span class="degree-year-label">Year 3 &middot; Semester 1</span>
+            <ul class="module-list">
+              <li><span class="module-code">F29AI</span> Artificial Intelligence and Intelligent Agents</li>
+              <li><span class="module-code">F29DC</span> Data Communications and Networking</li>
+              <li><span class="module-code">F29FA</span> Foundations 1</li>
+              <li><span class="module-code">F29SO</span> Software Engineering</li>
+            </ul>
+          </div>
+
+          <div class="degree-year">
+            <span class="degree-year-label">Year 3 &middot; Semester 2</span>
+            <ul class="module-list">
+              <li><span class="module-code">F29FB</span> Foundations 2</li>
+              <li><span class="module-code">F29LP</span> Language Processors</li>
+              <li><span class="module-code">F29OC</span> Operating Systems &amp; Concurrency</li>
+              <li><span class="module-code">F29PD</span> Professional Development</li>
+            </ul>
+          </div>
+
+          <div class="degree-year">
+            <span class="degree-year-label">Year 4 &middot; Semester 1</span>
+            <ul class="module-list">
+              <li><span class="module-code">F20BC</span> Biologically Inspired Computation</li>
+              <li><span class="module-code">F20CN</span> Computer Network Security</li>
+              <li><span class="module-code">F20PA</span> Research Methods &amp; Requirements Engineering</li>
+              <li><span class="module-code">F20RO</span> Intelligent Robotics</li>
+            </ul>
+          </div>
+
+          <div class="degree-year">
+            <span class="degree-year-label">Year 4 &middot; Semester 2</span>
+            <ul class="module-list">
+              <li><span class="module-code">F20AN</span> Advanced Network Security</li>
+              <li><span class="module-code">F20GP</span> Computer Games Programming</li>
+              <li><span class="module-code">F20PB</span> Design &amp; Implementation</li>
+              <li><span class="module-code">F20PC</span> Project Testing and Presentation</li>
+            </ul>
+          </div>
+        </div>
+
+      </section>      <!-- Courses -->
+      <section class="tab-panel" id="tab-courses" role="tabpanel">
+        <h2>Courses</h2>
+
+        <!-- MSc -->
+        <div class="degree-block">
+          <div class="degree-header">
+            <div>
+              <span class="degree-title">MSc Cybersecurity and Artificial Intelligence</span>
+              <span class="degree-school">Heriot-Watt University &middot; Sept. 2024 – Nov. 2025</span>
+              <span class="degree-award">Distinction</span>
+            </div>
+          </div>
+
+          <div class="degree-year">
+            <span class="degree-year-label">Semester 1</span>
+            <ul class="module-list">
+              <li>Cyber Threat Hunting and Digital Forensics</li>
+              <li>Machine Learning and Adaptive Intelligence</li>
+              <li>Text Processing</li>
+              <li>Fundamental Security Properties and Mechanisms</li>
+            </ul>
+          </div>
+
+          <div class="degree-year">
+            <span class="degree-year-label">Semester 2</span>
+            <ul class="module-list">
+              <li>Natural Language Processing</li>
+              <li>Development of Secure Software</li>
+              <li>Security of Control and Embedded Systems</li>
+              <li>Scalable Machine Learning</li>
+            </ul>
+          </div>
+
+          <div class="degree-year">
+            <span class="degree-year-label">Semesters 2 &amp; 3</span>
+            <ul class="module-list">
+              <li>Cybersecurity and AI Dissertation Project</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- BSc -->
+        <div class="degree-block">
+          <div class="degree-header">
+            <div>
+              <span class="degree-title">BSc Computer Science (Artificial Intelligence)</span>
+              <span class="degree-school">Heriot-Watt University &middot; Sept. 2021 – July 2024</span>
+              <span class="degree-award">First-Class Honours</span>
+            </div>
+          </div>
+
+          <div class="degree-year">
+            <span class="degree-year-label">Year 1</span>
+            <ul class="module-list">
+              <li class="module-apl">Direct entry via APL — 120 credits recognised (SCQF L7)</li>
+            </ul>
+          </div>
+
+          <div class="degree-year">
+            <span class="degree-year-label">Year 2 &middot; Semester 1</span>
+            <ul class="module-list">
+              <li><span class="module-code">F28ED</span> User-Centred Experimental Design</li>
+              <li><span class="module-code">F28PL</span> Programming Languages</li>
+              <li><span class="module-code">F28SG</span> Introduction to Data Structures &amp; Algorithms</li>
+              <li><span class="module-code">F28WP</span> Web Programming</li>
+            </ul>
+          </div>
+
+          <div class="degree-year">
+            <span class="degree-year-label">Year 2 &middot; Semester 2</span>
+            <ul class="module-list">
+              <li><span class="module-code">F28DA</span> Data Structures and Algorithms</li>
+              <li><span class="module-code">F28DM</span> Database Management Systems</li>
+              <li><span class="module-code">F28HS</span> Hardware-Software Interface</li>
+              <li><span class="module-code">F28SD</span> Introduction to Software Engineering</li>
+            </ul>
+          </div>
+
+          <div class="degree-year">
+            <span class="degree-year-label">Year 3 &middot; Semester 1</span>
+            <ul class="module-list">
+              <li><span class="module-code">F29AI</span> Artificial Intelligence and Intelligent Agents</li>
+              <li><span class="module-code">F29DC</span> Data Communications and Networking</li>
+              <li><span class="module-code">F29FA</span> Foundations 1</li>
+              <li><span class="module-code">F29SO</span> Software Engineering</li>
+            </ul>
+          </div>
+
+          <div class="degree-year">
+            <span class="degree-year-label">Year 3 &middot; Semester 2</span>
+            <ul class="module-list">
+              <li><span class="module-code">F29FB</span> Foundations 2</li>
+              <li><span class="module-code">F29LP</span> Language Processors</li>
+              <li><span class="module-code">F29OC</span> Operating Systems &amp; Concurrency</li>
+              <li><span class="module-code">F29PD</span> Professional Development</li>
+            </ul>
+          </div>
+
+          <div class="degree-year">
+            <span class="degree-year-label">Year 4 &middot; Semester 1</span>
+            <ul class="module-list">
+              <li><span class="module-code">F20BC</span> Biologically Inspired Computation</li>
+              <li><span class="module-code">F20CN</span> Computer Network Security</li>
+              <li><span class="module-code">F20PA</span> Research Methods &amp; Requirements Engineering</li>
+              <li><span class="module-code">F20RO</span> Intelligent Robotics</li>
+            </ul>
+          </div>
+
+          <div class="degree-year">
+            <span class="degree-year-label">Year 4 &middot; Semester 2</span>
+            <ul class="module-list">
+              <li><span class="module-code">F20AN</span> Advanced Network Security</li>
+              <li><span class="module-code">F20GP</span> Computer Games Programming</li>
+              <li><span class="module-code">F20PB</span> Design &amp; Implementation</li>
+              <li><span class="module-code">F20PC</span> Project Testing and Presentation</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+    </div><!-- /tab-panels -->
+  </main>
+
+</div><!-- /layout -->
+
+<script>
+  const buttons = document.querySelectorAll('.tab-btn');
+  const panels  = document.querySelectorAll('.tab-panel');
+
+  function switchTab(name) {
+    buttons.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); });
+    panels.forEach(p  =>   p.classList.remove('active'));
+    const btn = document.querySelector(`.tab-btn[data-tab="${name}"]`);
+    btn.classList.add('active');
+    btn.setAttribute('aria-selected', 'true');
+    document.getElementById('tab-' + name).classList.add('active');
+  }
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+  });
+</script>
