@@ -472,6 +472,7 @@ h1 {
   }
 
   .tab-btn {
+    padding: 0.9rem 1rem;
     white-space: nowrap;
     flex-shrink: 0;
   }
