@@ -17,7 +17,7 @@ module.exports = {
       authors: ["Dhruti Davey", "Eleni Vasilaki"],
       venue: "MSc Dissertation – University of Sheffield, 2024–2025",
       description: "Reimplemented a robotic model of hippocampal reverse replay, originally rate based, and converted it to use spiking neurons. Place cells used Poisson encoding for spatial position, while action cells used leaky integrate and fire (LIF) neurons. The model simulates how an agent in a navigation task can replay trajectories in reverse order to accelerate learning, a mechanism observed biologically in the hippocampus. The spiking implementation preserved task performance while increasing biological plausibility.",
-      links: { pdf: "/documents/2025/hippocampal_replay.pdf", code: "https://github.com/daveydhruti/snn-reverse-replay" }
+      links: { pdf: "/documents/2025/snn-reverse-replay.pdf", code: "https://github.com/daveydhruti/snn-reverse-replay" }
     },
     ],
   olderprojects: [
