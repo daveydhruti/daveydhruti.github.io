@@ -1,25 +1,29 @@
 module.exports = {
   description: "A selection of work I've done during and after my master's. My recent focus has been on spiking neural networks, biologically inspired learning, noise-aware learning, and reimplementing models from the literature to better understand their mechanics.",
-  publications: [
-    {
-      id: "paper1",
-      title: "Large Language Model-Based Intruision Detection",
-      authors: ["Dhruti Davey", "Kayvan Karim", "Hani Ragab Hassen", "Hadj Batatia"],
-      venue: "International Conference on Information Technology and Applications (ICITA), 2024",
-      description: "Developed an LLM-based intrusion detection system to classify network traffic as benign or malicious. Analysed NetFlow network data and logs, fine-tuned large language models for classification, and processed structured network traffic data to identify potential security threats.",
-      links: { pdf: "https://link.springer.com/chapter/10.1007/978-981-96-1758-6_26", code: "https://github.com/daveydhruti/llm-ids"}
-    },
-  ],
   projects: [
     {
-      id: "hippocampal_replay",
+      id: "snn-reverse-replay",
       title: "Spiking Neural Network Model of Hippocampal Reverse Replay",
       authors: ["Dhruti Davey", "Eleni Vasilaki"],
       venue: "MSc Dissertation – University of Sheffield, 2024–2025",
       description: "Reimplemented a robotic model of hippocampal reverse replay, originally rate based, and converted it to use spiking neurons. Place cells used Poisson encoding for spatial position, while action cells used leaky integrate and fire (LIF) neurons. The model simulates how an agent in a navigation task can replay trajectories in reverse order to accelerate learning, a mechanism observed biologically in the hippocampus. The spiking implementation preserved task performance while increasing biological plausibility.",
       links: { pdf: "/documents/2025/snn-reverse-replay.pdf", code: "https://github.com/daveydhruti/snn-reverse-replay" }
     },
-    ],
+  ],
+  workInProgress: [
+    {
+      title: "Noise-Aware Dynamic Optimization replication",
+      description: "A partial replication of the NADO framework implementing the core noise-aware training algorithm on conventional CMOS hardware where possible.",
+    },
+    // {
+    //   title: "KAN for Time Series Forecasting",
+    //   description: "Training a KAN to predict the next step in a noisy time series (e.g., stock data, weather, or synthetic chaotic systems like Lorenz).",
+    // },
+    {
+      title: "Visualizing What KANs Learn",
+      description: "Training a tiny KAN on a simple toy problem then extract and visualize the learned spline functions on each edge",
+    },
+  ],
   olderprojects: [
     {
       id: "llm_ids",
