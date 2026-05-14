@@ -12,6 +12,9 @@ body {
   margin: 0 auto;
   padding: 3rem 1.5rem;
   background: #fbf5ed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Navigation */
@@ -156,7 +159,7 @@ section {
 
 /* Footer */
 footer {
-  margin-top: 4rem;
+  margin-top: auto;
   padding-top: 1.5rem;
   border-top: 1px solid #e0d6cc;
   color: #999;
