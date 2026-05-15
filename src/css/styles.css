@@ -205,8 +205,12 @@ footer {
   margin-bottom: 0.5rem;
 }
 
+.tags {
+  margin: 0 0 2rem; 
+}
+
 .note-tags {
-  margin: 0;
+  margin: 0; 
 }
 
 .tag {
@@ -217,6 +221,7 @@ footer {
   padding: 0.15rem 0.5rem;
   border-radius: 3px;
   margin-right: 0.4rem;
+  margin-bottom: 0.4rem;
 }
 
 /* Responsive */

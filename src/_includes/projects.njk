@@ -24,18 +24,25 @@
     <section class="projects">
       <h2>Projects</h2>
       {% for pub in projects %}
-      <article id="{{ pub.id }}">
-        <h3>{{ pub.title }}</h3>
-        <p class="authors">{{ pub.authors | join(', ') }}</p>
-        <p class="venue"><em>{{ pub.venue }}</em></p>
-        <p class="description">{{ pub.description }}</p>
-        <p class="links">
-          {% if pub.links.pdf %}<a href="{{ pub.links.pdf }}">[PDF]</a>{% endif %}
-          {% if pub.links.code %}<a href="{{ pub.links.code }}">[Code]</a>{% endif %}
-          {% if pub.links.slides %}<a href="{{ pub.links.slides }}">[Slides]</a>{% endif %}
-          {% if pub.links.poster %}<a href="{{ pub.links.poster }}">[Poster]</a>{% endif %}
-        </p>
-      </article>
+        <article id="{{ pub.id }}">
+          <h3>{{ pub.title }}</h3>
+          <p class="authors">{{ pub.authors | join(', ') }}</p>
+          <p class="venue"><em>{{ pub.venue }}</em></p>
+          <p class="description">{{ pub.description }}</p>
+          <p class="links">
+            {% if pub.links.pdf %}<a href="{{ pub.links.pdf }}">[PDF]</a>{% endif %}
+            {% if pub.links.code %}<a href="{{ pub.links.code }}">[Code]</a>{% endif %}
+            {% if pub.links.slides %}<a href="{{ pub.links.slides }}">[Slides]</a>{% endif %}
+            {% if pub.links.poster %}<a href="{{ pub.links.poster }}">[Poster]</a>{% endif %}
+          </p>
+          {% if pub.tags %}
+          <div class="tags">
+            {% for tag in pub.tags %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </article>
       {% endfor %}
     </section>
 
@@ -54,6 +61,13 @@
             {% if pub.links.slides %}<a href="{{ pub.links.slides }}">[Slides]</a>{% endif %}
             {% if pub.links.poster %}<a href="{{ pub.links.poster }}">[Poster]</a>{% endif %}
           </p>
+          {% if pub.tags %}
+          <div class="tags">
+            {% for tag in pub.tags %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
         </article>
         {% endfor %}
       </section>
