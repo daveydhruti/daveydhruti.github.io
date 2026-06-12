@@ -1,5 +1,5 @@
 module.exports = {
-  intro: "I recently graduated from the University of Sheffield, where I did my Master's in Cybersecurity and AI. Currently exploring Neuromorphic Computing.",
+  intro: "I recently graduated from the University of Sheffield, where I did my Master's in Cybersecurity and AI. Currently exploring neuromorphic algorithms.",
   education: [
     { 
       degree: "M.Sc. Cybersecurity and Artificial Intelligence", 
