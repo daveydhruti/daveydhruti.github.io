@@ -91,20 +91,20 @@ module.exports = {
           year: "Year 4",
           semester: "Semester 1",         
           modules: [
-            "F20AN Advanced Network Security",
-            "F20GP Computer Games Programming",
-            "F20PB Design & Implementation",
-            "F20PC Project Testing and Presentation"
+            "F20BC Biologically Inspired Computation",
+            "F20CN Computer Network Security",
+            "F20PA Research Methods & Requirements Engineering",
+            "F20RO Intelligent Robotics",
           ]
         },
         {
           year: "Year 4",
           semester: "Semester 2",         
           modules: [
-            "F20BC Biologically Inspired Computation",
-            "F20CN Computer Network Security",
-            "F20PA Research Methods & Requirements Engineering",
-            "F20RO Intelligent Robotics",
+            "F20AN Advanced Network Security",
+            "F20GP Computer Games Programming",
+            "F20PB Design & Implementation",
+            "F20PC Project Testing and Presentation"
           ]
         },
       ]

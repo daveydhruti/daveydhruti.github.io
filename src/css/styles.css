@@ -66,6 +66,24 @@ p {
   color: #4a4a4a;
 }
 
+/* pronouns */
+.title-group {
+  display: flex;
+  align-items: baseline; 
+  gap: 0.75rem;          
+  flex-wrap: wrap;       
+}
+
+.title-group h1 {
+  margin: 0;
+}
+
+.pronouns {
+  font-size: 1rem;   
+  color: #4a4a4a;        
+  font-weight: normal;
+}
+
 /* Bio section */
 .bio {
   font-size: 1.15rem;

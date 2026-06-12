@@ -9,11 +9,25 @@
 <body>
   <header>
     {% include "nav.njk" %}
-    <h1>{{ title }}</h1>
+    <div class="title-group">
+      <h1>{{ title }}</h1><span class="pronouns">(she/her)</span>
+    </div>
     <section class="intro">
       <p>{{ intro | safe }}</p>
     </section>
   </header>
+  
+  {% if projects %}
+    <section class="projects">
+      <h2>Selected Projects</h2>
+      {% for proj in projects %}
+      <article>
+        <h3><a href="{{ proj.links }}">{{ proj.title }}</a></h3>
+        <p><em>{{ proj.description }}</em></p>
+      </article>
+      {% endfor %}
+    </section>
+  {% endif %}
   
   <footer>
     <p>&copy; 2026 Dhruti Davey. Built with 11ty.</p>

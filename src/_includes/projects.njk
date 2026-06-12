@@ -11,9 +11,11 @@
     {% include "nav.njk" %}
 
     <h1>{{ title }}</h1>
-    {% if description %}
-    <p>{{ description }}</p>
-    {% endif %}
+    <section class="intro">
+      {% if description %}
+        <p>{{ description }}</p>
+      {% endif %}
+    </section>
   </header>
 
   <main>
@@ -23,21 +25,25 @@
 
     <section class="projects">
       <h2>Projects</h2>
-      {% for pub in projects %}
-        <article id="{{ pub.id }}">
-          <h3>{{ pub.title }}</h3>
-          <p class="authors">{{ pub.authors | join(', ') }}</p>
-          <p class="venue"><em>{{ pub.venue }}</em></p>
-          <p class="description">{{ pub.description }}</p>
+      {% for proj in projects %}
+        <article id="{{ proj.id }}">
+          {% if proj.blog %}        
+            <h3><a href="{{ proj.blog }}">{{ proj.title }}</a></h3>
+          {% else %}
+            <h3>{{ proj.title }}</h3>
+          {% endif %}
+          <p class="authors">{{ proj.authors | join(', ') }}</p>
+          <p class="venue"><em>{{ proj.venue }}</em></p>
+          <p class="description">{{ proj.description }}</p>
           <p class="links">
-            {% if pub.links.pdf %}<a href="{{ pub.links.pdf }}">[PDF]</a>{% endif %}
-            {% if pub.links.code %}<a href="{{ pub.links.code }}">[Code]</a>{% endif %}
-            {% if pub.links.slides %}<a href="{{ pub.links.slides }}">[Slides]</a>{% endif %}
-            {% if pub.links.poster %}<a href="{{ pub.links.poster }}">[Poster]</a>{% endif %}
+            {% if proj.links.pdf %}<a href="{{ proj.links.pdf }}">[PDF]</a>{% endif %}
+            {% if proj.links.code %}<a href="{{ proj.links.code }}">[Code]</a>{% endif %}
+            {% if proj.links.slides %}<a href="{{ proj.links.slides }}">[Slides]</a>{% endif %}
+            {% if proj.links.poster %}<a href="{{ proj.links.poster }}">[Poster]</a>{% endif %}
           </p>
-          {% if pub.tags %}
+          {% if proj.tags %}
           <div class="tags">
-            {% for tag in pub.tags %}
+            {% for tag in proj.tags %}
             <span class="tag">{{ tag }}</span>
             {% endfor %}
           </div>

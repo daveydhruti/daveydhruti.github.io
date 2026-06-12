@@ -1,5 +1,5 @@
 module.exports = {
-  description: "A selection of my work I've done. My recent focus has been on spiking neural networks, biologically inspired learning, and reimplementing models from the literature to better understand their mechanics.",
+  description: "A selection of my work I've done. My recent focus has been on spiking neural networks, and biologically inspired learning.",
   projects: [
     {
       id: "snn-reverse-replay",
@@ -35,6 +35,79 @@ module.exports = {
       tags: ["cybersecurity", "large language models", "intrusion detection", "network security"],
       links: { pdf: "https://link.springer.com/chapter/10.1007/978-981-96-1758-6_26", code: "https://gitlab.com/daveydhruti-bsc-projects/llm-ids"}
     },
+  ],
+  allprojects: [
+    {
+      id: "snn_reverse_replay",
+      title: "SNN Model of Hippocampal Reverse Replay",
+      type: "MSc Dissertation",
+      date: "Jan. 2024 -- Sept. 2025",
+      description: [
+        "Implemented an RL decision-making model, converting rate-based neurons to spiking neurons.",
+        "Modelled agent state representation via Poisson firing & action-selection policy with LIF neurons.",
+        "Preserved task performance over baseline while evaluating agent behaviour across policy variants.",
+      ]
+    },
+    {
+      title: "Scalable Machine Learning with PySpark on HPC",
+      type: "Academic Project",
+      date: "Feb. 2025 -- Mar. 2025",
+      description: [
+        "Processed large-scale datasets on HPC using PySpark, mining NASA web logs with distributed aggregations.",
+        "Tuned Logistic Regression, Poisson Regression, & ALS collaborative filtering via cross-validated grid search.",
+        "Compared Random Forest, GBT, and Neural Networks across training sizes, analysing accuracy and latency."
+      ]
+    },
+    {
+      title: "Feedforward Neural Network for News Topic Classification",
+      type: "Academic Project (COM6513 -- Natural Language Processing)",
+      date: "Feb. 2025",
+      description: [
+        "Built a feedforward neural network from scratch in NumPy, without the use of deep learning libraries.",
+        "Trained models using SGD, comparing r&om embeddings against frozen GloVe embeddings.",
+        "Evaluated model variants through hyperparameter tuning & error analysis."
+      ]
+    },
+    {
+      title: "Unsupervised Learning and Deep Classification on Fashion MNIST",
+      type: "Academic Project",
+      date: "Dec. 2024",
+      description: [
+        "Applied K-Means and PCA to Fashion MNIST, visualising cluster quality against true labels.",
+        "Trained and compared Logistic Regression, RNN, CNN, and Fully Connected CNN in PyTorch.",
+        "Analysed complexity vs. performance trade-offs using cross-entropy loss and batch-based training loops."
+      ]
+    },
+    {
+      title: "Probabilistic Bee Path Tracking with Gaussian Basis Regression",
+      type: "Academic Project",
+      date: "Nov. 2024",
+      description: [
+        "Reconstructed bee flight paths from noisy sensor data using Gaussian radial basis functions for regression.",
+        "Minimised a regularised negative log-likelihood, fitting model parameters via numerical optimisation.",
+        "Selected optimal hyperparameters via grid search over regularisation and noise scale across datasets."
+      ]
+    },
+    {
+      title: "Large Language Model-based Intrusion Detection",
+      type: "BSc Dissertation",
+      date: "Feb. 2025 -- Mar. 2025",
+      description: [
+        "Fine-tuned LLMs for context-aware classification using a retrieval-augmented inference pipeline.",
+        "Processed structured NetFlow data to construct a contextual feature store for model input.",
+        "Implemented an automated RL feedback loop for iterative model refinement, improving robustness."
+      ]
+    },
+    {
+      title: "ANN with Particle Swarm Optimisation",
+      type: "Academic Project",
+      date: "Feb. 2025 -- Mar. 2025",
+      description: [
+        "Implemented an ANN and PSO algorithm entirely from scratch in Python without external ML libraries.",
+        "Designed a Tkinter GUI to visualise training progress and model behaviour interactively.",
+        "Structured into modular components separating optimisation logic, model architecture, and interface."
+      ]
+    }
   ],
   olderprojects: [
     {
@@ -161,10 +234,4 @@ module.exports = {
       // links: { code: "#" }
     }
   ],
-  // workInProgress: [
-  //   { 
-  //     title: "Raspberry Pi Network Monitor & Alert System", 
-  //     status: "In progress – configuring Raspberry Pi as a dedicated network monitoring node, deploying open-source tools for traffic analysis, and setting up automated alerting for intrusion detection simulation. (Expected completion: Apr. 2026)" 
-  //   }
-  // ]
 };
