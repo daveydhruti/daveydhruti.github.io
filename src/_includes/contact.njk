@@ -17,28 +17,22 @@
   </header>
 
   <main>
-
-
     <section class="contact-info">
       <ul>
-        {% if email %}
+      {% if not site.shortenAuthors %}
           <li><strong>Email:</strong> <a href="mailto:{{ email }}">{{ email }}</a></li>
-        {% endif %}
-        {% if social.gitlab %}
           <li><strong>GitLab:</strong> <a href="{{ social.gitlab.url }}">{{ social.gitlab.handle }}</a></li>
-        {% endif %}
-        {% if social.scholar %}
-          <li><strong>Google Scholar:</strong> <a href="{{ social.scholar.url }}">{{ social.scholar.name }}</a></li>
-        {% endif %}
-        {% if social.linkedin %}
           <li><strong>LinkedIn:</strong> <a href="{{ social.linkedin.url }}">{{ social.linkedin.name }}</a></li>
-        {% endif %}
+      {% else %}
+          <li><strong>Email:</strong> <a href="mailto:{{ shorten.email }}">{{ shorten.email }}</a></li>
+          <li><strong>GitLab:</strong> <a href="{{ shorten.social.gitlab.url }}">{{ shorten.social.gitlab.handle }}</a></li>
+      {% endif %}
       </ul>
     </section>
 
   </main>
   <footer>
-    <p>&copy; 2026 Dhruti Davey. Built with 11ty.</p>
+    <p>&copy; 2026 {{ "Dhruti Davey" | formatName }}. Built with 11ty.</p>
   </footer>
 </body>
 </html>

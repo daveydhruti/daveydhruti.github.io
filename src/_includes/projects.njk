@@ -24,17 +24,22 @@
     </section>
 
     <section class="projects">
-      <h2>Projects</h2>
-      {% for proj in projects %}
+      {% for proj in selected_projects %}
         <article id="{{ proj.id }}">
           {% if proj.blog %}        
             <h3><a href="{{ proj.blog }}">{{ proj.title }}</a></h3>
           {% else %}
             <h3>{{ proj.title }}</h3>
           {% endif %}
-          <p class="authors">{{ proj.authors | join(', ') }}</p>
+          <p class="authors">{{ proj.authors | formatAuthors }}</p>
           <p class="venue"><em>{{ proj.venue }}</em></p>
-          <p class="description">{{ proj.description }}</p>
+          <div class="projects-description">
+          {% for d in proj.description %}
+            <ul>
+              <li>{{ d }}</li>
+            </ul>
+          {% endfor %}
+          </div>
           <p class="links">
             {% if proj.links.pdf %}<a href="{{ proj.links.pdf }}">[PDF]</a>{% endif %}
             {% if proj.links.code %}<a href="{{ proj.links.code }}">[Code]</a>{% endif %}
@@ -58,9 +63,15 @@
         {% for pub in publications %}
         <article id="{{ pub.id }}">
           <h3>{{ pub.title }}</h3>
-          <p class="authors">{{ pub.authors | join(', ') }}</p>
+          <p class="authors">{{ pub.authors | formatAuthors }}</p>
           <p class="venue"><em>{{ pub.venue }}</em></p>
-          <p class="description">{{ pub.description }}</p>
+          <div class="projects-description">
+            {% for d in pub.description %}
+              <ul>
+                <li>{{ d }}</li>
+              </ul>
+            {% endfor %}
+          </div>          
           <p class="links">
             {% if pub.links.pdf %}<a href="{{ pub.links.pdf }}">[PDF]</a>{% endif %}
             {% if pub.links.code %}<a href="{{ pub.links.code }}">[Code]</a>{% endif %}
@@ -75,6 +86,38 @@
           </div>
           {% endif %}
         </article>
+        {% endfor %}
+      </section>
+    {% endif %}
+    
+    {% if projects %}
+      <section class="projects">
+        <h2>Other Projects</h2>
+        {% for proj in projects %}
+        <article id="{{ proj.id }}">
+          <h3>{{ proj.title }}</h3>
+          <p class="venue"><em>{{ proj.venue }}</em></p>
+          <div class="projects-description">
+            {% for d in proj.description %}
+              <ul>
+                <li>{{ d }}</li>
+              </ul>
+            {% endfor %}
+          </div> 
+          <p class="links">
+            {% if proj.links.pdf %}<a href="{{ proj.links.pdf }}">[PDF]</a>{% endif %}
+            {% if proj.links.code %}<a href="{{ proj.links.code }}">[Code]</a>{% endif %}
+            {% if proj.links.slides %}<a href="{{ proj.links.slides }}">[Slides]</a>{% endif %}
+            {% if proj.links.poster %}<a href="{{ proj.links.poster }}">[Poster]</a>{% endif %}
+          </p>
+          {% if proj.tags %}
+          <div class="tags">
+            {% for tag in proj.tags %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+          </article>
         {% endfor %}
       </section>
     {% endif %}
@@ -95,7 +138,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2026 Dhruti Davey. Built with 11ty.</p>
+    <p>&copy; 2026 {{ "Dhruti Davey" | formatName }}. Built with 11ty.</p>
   </footer>
 </body>
 </html>

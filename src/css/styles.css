@@ -242,23 +242,6 @@ footer {
   margin-bottom: 0.4rem;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  body {
-    padding: 2rem 1.25rem;
-  }
-
-  h1 {
-    font-size: 1.75rem;
-  }
-
-  nav a {
-    display: block;
-    margin-bottom: 0.5rem;
-    margin-right: 0;
-  }
-}
-
 /* Education Modules Styling */
 .modules-container {
   margin: 0 0 1.5rem;
@@ -289,4 +272,39 @@ footer {
   font-size: 0.95rem;
   color: #4a4a4a;
   line-height: 1.5;
+}
+
+.projects-description ul,
+.projects-description ol {
+    margin-bottom: 0;
+}
+
+.projects-description li {
+    margin-bottom: 2px;
+    padding-bottom: 2px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 2rem 1.25rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  nav a {
+    display: block;
+    margin-bottom: 0.5rem;
+    margin-right: 0;
+  }
+
+  body.page-wallpapers {
+    max-width: 100%;
+  }
+
+  .wallpaper-grid {
+    grid-template-columns: 1fr;
+  }
 }

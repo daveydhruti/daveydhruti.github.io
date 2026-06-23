@@ -26,6 +26,29 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  eleventyConfig.addFilter("formatAuthors", function(authors) {
+    const shorten = this.ctx?.site?.shortenAuthors ?? this.page?.site?.shortenAuthors;
+    if (!shorten) return authors.join(', ');
+    
+    return authors.map(name => {
+      const parts = name.trim().split(/\s+/);
+      const last = parts.pop();
+      const initials = parts.map(p => p[0] + '.').join(' ');
+      return initials ? `${initials} ${last}` : last;
+    }).join(', ');
+  });
+
+  // Also add a single-name shortener for use in prose
+  eleventyConfig.addFilter("formatName", function(name) {
+    const shorten = this.ctx?.site?.shortenAuthors ?? this.page?.site?.shortenAuthors;
+    if (!shorten) return name;
+
+    const parts = name.trim().split(/\s+/);
+    const last = parts.pop();
+    const initials = parts.map(p => p[0] + '.').join(' ');
+    return initials ? `${initials} ${last}` : last;
+  });
+
   // Use JSON data files from _data directory
   eleventyConfig.addDataExtension("json", (contents) => JSON.parse(contents));
 

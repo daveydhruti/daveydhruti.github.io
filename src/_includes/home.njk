@@ -10,7 +10,7 @@
   <header>
     {% include "nav.njk" %}
     <div class="title-group">
-      <h1>{{ title }}</h1><span class="pronouns">(she/her)</span>
+      <h1>{{ title | formatName }}{% if not site.shortenAuthors %}</h1><span class="pronouns">(she/her)</span>{% endif %}
     </div>
     <section class="intro">
       <p>{{ intro | safe }}</p>
@@ -30,7 +30,7 @@
   {% endif %}
   
   <footer>
-    <p>&copy; 2026 Dhruti Davey. Built with 11ty.</p>
+    <p>&copy; 2026 {{ "Dhruti Davey" | formatName }}. Built with 11ty.</p>
   </footer>
 </body>
 </html>
