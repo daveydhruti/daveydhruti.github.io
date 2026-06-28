@@ -1,3 +1,3 @@
 module.exports = {
-  shortenAuthors: false,
+	shortenAuthors: false,
 };

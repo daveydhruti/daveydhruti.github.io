@@ -4,6 +4,7 @@ const markdownItMathjax3 = require("markdown-it-mathjax3");
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/documents");
+  eleventyConfig.addPassthroughCopy("src/images");
 
   let markdownLibrary = markdownIt({
     html: true,
@@ -47,7 +48,7 @@ module.exports = function(eleventyConfig) {
     const last = parts.pop();
     const initials = parts.map(p => p[0] + '.').join(' ');
     return initials ? `${initials} ${last}` : last;
-  });
+  });  
 
   // Use JSON data files from _data directory
   eleventyConfig.addDataExtension("json", (contents) => JSON.parse(contents));
