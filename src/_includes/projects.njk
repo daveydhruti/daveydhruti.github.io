@@ -92,32 +92,36 @@
     
     {% if projects %}
       <section class="projects">
-        <h2>Other Projects</h2>
         {% for proj in projects %}
-        <article id="{{ proj.id }}">
-          <h3>{{ proj.title }}</h3>
-          <p class="venue"><em>{{ proj.venue }}</em></p>
-          <div class="projects-description">
-            {% for d in proj.description %}
-              <ul>
-                <li>{{ d }}</li>
-              </ul>
+          {% if proj.projects %}
+            <h2>{{ proj.semester }}</h2>
+            {% for p in proj.projects %}
+              <article id="{{ p.id }}">
+                <h3>{{ p.title }}</h3>
+                <p class="venue"><em>{{ p.venue }}</em></p>
+                <div class="projects-description">
+                  {% for d in p.description %}
+                    <ul>
+                      <li>{{ d }}</li>
+                    </ul>
+                  {% endfor %}
+                </div> 
+                <p class="links">
+                  {% if p.links.pdf %}<a href="{{ p.links.pdf }}">[PDF]</a>{% endif %}
+                  {% if p.links.code %}<a href="{{ p.links.code }}">[Code]</a>{% endif %}
+                  {% if p.links.slides %}<a href="{{ p.links.slides }}">[Slides]</a>{% endif %}
+                  {% if p.links.poster %}<a href="{{ p.links.poster }}">[Poster]</a>{% endif %}
+                </p>
+                {% if p.tags %}
+                  <div class="tags">
+                    {% for tag in p.tags %}
+                    <span class="tag">{{ tag }}</span>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+              </article>
             {% endfor %}
-          </div> 
-          <p class="links">
-            {% if proj.links.pdf %}<a href="{{ proj.links.pdf }}">[PDF]</a>{% endif %}
-            {% if proj.links.code %}<a href="{{ proj.links.code }}">[Code]</a>{% endif %}
-            {% if proj.links.slides %}<a href="{{ proj.links.slides }}">[Slides]</a>{% endif %}
-            {% if proj.links.poster %}<a href="{{ proj.links.poster }}">[Poster]</a>{% endif %}
-          </p>
-          {% if proj.tags %}
-          <div class="tags">
-            {% for tag in proj.tags %}
-            <span class="tag">{{ tag }}</span>
-            {% endfor %}
-          </div>
           {% endif %}
-          </article>
         {% endfor %}
       </section>
     {% endif %}

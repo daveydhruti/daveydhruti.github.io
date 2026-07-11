@@ -1,4 +1,4 @@
 ---
 layout: projects.njk
-title: Projects
+title: Selected Projects
 ---

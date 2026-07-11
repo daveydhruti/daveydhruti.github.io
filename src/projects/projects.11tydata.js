@@ -1,4 +1,96 @@
 module.exports = {
+  projects: [
+    {
+      semester: "MSc Projects",
+      projects: [
+        {
+          title: "Scalable Machine Learning with PySpark on HPC",
+          type: "Academic Project",
+          module: "COM6012 -- Scalable Machine Learning",
+          date: "Feb. 2025 -- Mar. 2025",      
+          description: [
+            "Processed large-scale datasets on HPC using PySpark, mining NASA web logs with distributed aggregations.",
+            "Tuned Logistic Regression, Poisson Regression, & ALS collaborative filtering via cross-validated grid search.",
+            "Compared Random Forest, GBT, and Neural Networks across training sizes, analysing accuracy and latency."
+          ],
+          tags: ["PySpark", "Scalable ML", "Distributed Computing", "Log Mining", "Recommender Systems", "ALS", "Logistic Regression", "Gradient Boosting", "Random Forest", "Neural Networks", "K-Means Clustering", "Hyperparameter Tuning", "Cross-Validation", "Data Visualisation"],
+        },
+        {
+          title: "Feedforward Neural Network for News Topic Classification",
+          type: "Academic Project",
+          module: "COM6513 -- Natural Language Processing",
+          date: "Feb. 2025",      
+          description: [
+            "Built a Feedforward Neural Network from scratch in NumPy, implementing backpropagation,ReLU, softmax, cross-entropy loss, and dropout for 3-class news article classification.",
+            "Benchmarked randomly initialised embeddings against frozen GloVe pre-trained embeddings, achieving up to 87.9% test accuracy via SGD with systematic hyperparameter tuning.",
+            "Extended the network with multi-layer architectures and conducted error analysis using confusion matrices and per-class word frequency inspection to diagnose misclassifications."
+          ],
+          tags: ["Neural Networks", "NLP", "NumPy", "Feedforward Neural Network", "Backpropagation", "SGD", "GloVe Embeddings", "Text Classification", "Dropout Regularisation", "Hyperparameter Tuning", "Softmax", "Cross-Entropy Loss", "AG News Corpus", "Deep Learning from Scratch"]
+        },
+        {
+          title: "Unsupervised Learning and Deep Classification on Fashion MNIST",
+          type: "Academic Project",
+          module: "COM6509",
+          date: "Dec. 2024",      
+          description: [
+            "Applied K-Means clustering and PCA (3-component dimensionality reduction) to Fashion MNIST, visualising cluster quality against true labels in reduced feature space.",
+            "Trained and benchmarked Logistic Regression, RNN, CNN, and a Fully Connected CNN in PyTorch, evaluating training, validation, and test accuracy across all architectures.",
+            "Analysed complexity-performance trade-offs across models, implementing structured training loops with cross-entropy loss and batch-based data loading throughout."
+          ],
+          tags: [
+            "Unsupervised Learning", "Deep Learning", "PyTorch", "CNN", "RNN", "Logistic Regression", "K-Means Clustering", "PCA", "Dimensionality Reduction", "Image Classification", "Fashion MNIST", "Cross-Entropy Loss", "Model Comparison", "Computer Vision" 
+          ]
+        },
+        {
+          title: "Probabilistic Bee Path Tracking with Gaussian Basis Regression",
+          type: "Academic Project",
+          date: "Nov. 2024",      
+          description: [
+            "Implemented a probabilistic regression model using Gaussian Radial Basis Functions to reconstruct bee flight trajectories from noisy 2D sensor observations.",
+            "Derived and minimised a regularised negative log-likelihood objective, fitting 20 model parameters via numerical optimisation using scipy.optimize.minimize.",
+            "Selected optimal regularisation and noise scale hyperparameters through grid search across multiple datasets, evaluating reconstruction quality against ground-truth flight paths."
+          ],
+          tags: [
+            "Gaussian Radial Basis Functions", "Probabilistic Modelling", "Regression", "Numerical Optimisation", "Regularisation", "Hyperparameter Tuning", "Trajectory Reconstruction", "NumPy", "Log-Likelihood", "Machine Learning", "Spatial Modelling"
+          ]
+        },
+        {
+          title: "Denoising Autoencoder on CIFAR-10",
+          type: "Academic Project",
+          date: "Dec. 2024",      
+          description: [
+            "Built a convolutional denoising autoencoder in PyTorch using Conv2d and ConvTranspose2d layers to learn compressed latent representations of CIFAR-10 images.",
+            "Trained the model to reconstruct clean images from synthetically corrupted inputs, evaluating reconstruction error on a held-out noisy test set.",
+            "Saved and reloaded model weights for inference, qualitatively and quantitatively comparing denoised outputs against original images to assess reconstruction quality."
+          ],
+          tags:[
+            "Autoencoder", "Denoising", "PyTorch", "CNN", "Conv2d", "ConvTranspose2d", "CIFAR-10", "Image Reconstruction", "Representation Learning", "Computer Vision", "Deep Learning", "Model Serialisation"
+          ]
+        },
+      ],
+    },
+    {
+      semester: "BSc Year 4 Projects",
+      // projects: [
+      //   {
+      //     title: "ANN with Particle Swarm Optimisation",
+      //     type: "Academic Project",
+      //     date: "Feb. 2025 -- Mar. 2025",      
+      //     description: [
+      //       "Implemented an ANN and PSO algorithm entirely from scratch in Python without external ML libraries.",
+      //       "Designed a Tkinter GUI to visualise training progress and model behaviour interactively.",
+      //       "Structured into modular components separating optimisation logic, model architecture, and interface."
+      //     ]
+      //   },
+      // ]
+    },
+    {
+      semester: "BSc Year 3 Projects",
+    },
+    {
+      semester: "BSc Year 2 Projects",
+    }
+  ],
   selected_projects: [
     {
       id: "snn-reverse-replay",
@@ -6,11 +98,11 @@ module.exports = {
       authors: ["Dhruti Davey", "Eleni Vasilaki"],
       venue: "MSc Dissertation – University of Sheffield, 2024–2025",
       description: [
-        "Converted a rate-based hippocampal reverse-replay RL model into a spiking neural network, using Poisson-spiking place cells for spatial encoding and LIF neurons for action cells.",
-        "Simulated a navigation agent that replays trajectories in reverse order, mirroring biological hippocampal replay to speed up learning.",
-        "The spiking version maintained task performance equivalent to the original while improving biological realism."
+        "Converted a rate-based hippocampal reverse-replay Reinforcement Learning model into a Spiking Neural Network, encoding spatial position via Poisson-firing place cells and modelling action selection with LIF neurons.",
+        "Simulated a navigation agent performing biological reverse trajectory replay, mirroring hippocampal memory consolidation mechanisms to accelerate reinforcement learning.",
+        "Validated that the spiking model preserved task performance equivalent to the original rate-based model, while significantly increasing biological plausibility of the architecture."
       ],
-      tags: ["neuromorphic algorithms", "spiking neural networks", "hippocampus", "reinforcement learning"],
+      tags: ["Neuromorphic Algorithms", "Spiking Neural Networks", "Reinforcement Learning", "Hippocampal Replay", "Leaky Integrate-and-Fire", "Poisson Spiking Neurons", "Place Cells", "Spatial Navigation", "Biologically Plausible AI"],
       links: { pdf: "/documents/2025/snn-reverse-replay.pdf", code: "https://gitlab.com/daveydhruti-msc-projects/snn-reverse-replay" } 
     },
   ],
@@ -28,58 +120,6 @@ module.exports = {
       tags: ["cybersecurity", "large language models", "intrusion detection", "network security"],
       links: { pdf: "https://link.springer.com/chapter/10.1007/978-981-96-1758-6_26", code: "https://gitlab.com/daveydhruti-bsc-projects/llm-ids"}
     },
-  ],
-  projects: [
-    {
-      title: "Scalable Machine Learning with PySpark on HPC",
-      type: "Academic Project",
-      date: "Feb. 2025 -- Mar. 2025",      
-      description: [
-        "Processed large-scale datasets on HPC using PySpark, mining NASA web logs with distributed aggregations.",
-        "Tuned Logistic Regression, Poisson Regression, & ALS collaborative filtering via cross-validated grid search.",
-        "Compared Random Forest, GBT, and Neural Networks across training sizes, analysing accuracy and latency."
-      ]
-    },
-    {
-      title: "Feedforward Neural Network for News Topic Classification",
-      type: "Academic Project (COM6513 -- Natural Language Processing)",
-      date: "Feb. 2025",      
-      description: [
-        "Built a feedforward neural network from scratch in NumPy, without the use of deep learning libraries.",
-        "Trained models using SGD, comparing r&om embeddings against frozen GloVe embeddings.",
-        "Evaluated model variants through hyperparameter tuning & error analysis."
-      ]
-    },
-    {
-      title: "Unsupervised Learning and Deep Classification on Fashion MNIST",
-      type: "Academic Project",
-      date: "Dec. 2024",      
-      description: [
-        "Applied K-Means and PCA to Fashion MNIST, visualising cluster quality against true labels.",
-        "Trained and compared Logistic Regression, RNN, CNN, and Fully Connected CNN in PyTorch.",
-        "Analysed complexity vs. performance trade-offs using cross-entropy loss and batch-based training loops."
-      ]
-    },
-    {
-      title: "Probabilistic Bee Path Tracking with Gaussian Basis Regression",
-      type: "Academic Project",
-      date: "Nov. 2024",      
-      description: [
-        "Reconstructed bee flight paths from noisy sensor data using Gaussian radial basis functions for regression.",
-        "Minimised a regularised negative log-likelihood, fitting model parameters via numerical optimisation.",
-        "Selected optimal hyperparameters via grid search over regularisation and noise scale across datasets."
-      ]
-    },
-    {
-      title: "ANN with Particle Swarm Optimisation",
-      type: "Academic Project",
-      date: "Feb. 2025 -- Mar. 2025",      
-      description: [
-        "Implemented an ANN and PSO algorithm entirely from scratch in Python without external ML libraries.",
-        "Designed a Tkinter GUI to visualise training progress and model behaviour interactively.",
-        "Structured into modular components separating optimisation logic, model architecture, and interface."
-      ]
-    }
   ],
   archive: [
     {

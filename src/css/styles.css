@@ -17,7 +17,7 @@ body {
   flex-direction: column;
 }
 
-/* Navigation */
+/* Nav bar */
 nav {
   margin-bottom: 2rem;
   padding-bottom: 1rem;
@@ -66,12 +66,12 @@ p {
   color: #4a4a4a;
 }
 
-/* pronouns */
+/* Pronouns */
 .title-group {
   display: flex;
-  align-items: baseline; 
-  gap: 0.75rem;          
-  flex-wrap: wrap;       
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
 
 .title-group h1 {
@@ -79,12 +79,12 @@ p {
 }
 
 .pronouns {
-  font-size: 1rem;   
-  color: #4a4a4a;        
+  font-size: 1rem;
+  color: #4a4a4a;
   font-weight: normal;
 }
 
-/* Bio section */
+/* Bio */
 .bio {
   font-size: 1.15rem;
   color: #666;
@@ -103,6 +103,19 @@ a:hover {
   text-decoration: underline;
 }
 
+.back-link {
+  display: inline-block;
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
 /* Lists */
 ul, ol {
   margin: 0 0 1.5rem 1.5rem;
@@ -113,12 +126,101 @@ li {
   margin-bottom: 0.5rem;
 }
 
-/* Sections */
+.contact-list {
+  list-style: none;
+  margin: 0;
+}
+
+.contact-list li {
+  margin-bottom: 0.75rem;
+}
+
+.contact-label {
+  font-weight: 500;
+  color: #333;
+}
+
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+  color: #4a4a4a;
+}
+
+th {
+  text-align: left;
+  font-weight: 600;
+  color: #1a1a1a;
+  padding: 0.6rem 0.85rem;
+  background: #f0e9df;
+  border-bottom: 2px solid #d6cabf;
+}
+
+td {
+  padding: 0.6rem 0.85rem;
+  border-bottom: 1px solid #e8e0d6;
+  vertical-align: top;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover td {
+  background: #f7f0e8;
+}
+
+/* Sections and Layouts */
 section {
   margin-top: 2.5rem;
 }
 
-/* Publication/Writing cards */
+.modules-container {
+  margin: 0 0 1.5rem;
+  padding: 0 1.5rem;
+}
+
+.term {
+  margin-bottom: 1.5rem;
+}
+
+.term:last-child {
+  margin-bottom: 0;
+}
+
+.term h4 {
+  color: #4a4a4a;
+  border-bottom: 1px solid #e0d6cc;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.term ul {
+  margin-left: 1.25rem;
+}
+
+.term li {
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+  color: #4a4a4a;
+  line-height: 1.5;
+}
+
+.projects-description ul,
+.projects-description ol {
+  margin-bottom: 0;
+}
+
+.projects-description li {
+  margin-bottom: 2px;
+  padding-bottom: 2px;
+}
+
+
+/* Cards - Publications, Writings, Notes */
 .publication,
 .writing-item {
   padding: 1.25rem 0;
@@ -160,45 +262,6 @@ section {
   margin-top: 0.5rem;
 }
 
-/* Contact info */
-.contact-list {
-  list-style: none;
-  margin: 0;
-}
-
-.contact-list li {
-  margin-bottom: 0.75rem;
-}
-
-.contact-label {
-  font-weight: 500;
-  color: #333;
-}
-
-/* Footer */
-footer {
-  margin-top: auto;
-  padding-top: 1.5rem;
-  border-top: 1px solid #e0d6cc;
-  color: #999;
-  font-size: 0.85rem;
-}
-
-/* Back button */
-.back-link {
-  display: inline-block;
-  color: #666;
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-  transition: color 0.2s ease;
-}
-
-.back-link:hover {
-  color: #1a1a1a;
-  text-decoration: none;
-}
-
-/* Notes list */
 .notes-list {
   margin-top: 2rem;
 }
@@ -223,12 +286,13 @@ footer {
   margin-bottom: 0.5rem;
 }
 
+/* Tags */
 .tags {
-  margin: 0 0 2rem; 
+  margin: 0 0 2rem;
 }
 
 .note-tags {
-  margin: 0; 
+  margin: 0;
 }
 
 .tag {
@@ -242,47 +306,16 @@ footer {
   margin-bottom: 0.4rem;
 }
 
-/* Education Modules Styling */
-.modules-container {
-  margin: 0 0 1.5rem;
-  padding: 0 1.5rem;
+
+/* Footer */
+footer {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e0d6cc;
+  color: #999;
+  font-size: 0.85rem;
 }
 
-.term {
-  margin-bottom: 1.5rem;
-}
-
-.term:last-child {
-  margin-bottom: 0;
-}
-
-.term h4 {
-  color: #4a4a4a;
-  border-bottom: 1px solid #e0d6cc;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.term ul {
-  margin-left: 1.25rem;
-}
-
-.term li {
-  margin-bottom: 0.25rem;
-  font-size: 0.95rem;
-  color: #4a4a4a;
-  line-height: 1.5;
-}
-
-.projects-description ul,
-.projects-description ol {
-    margin-bottom: 0;
-}
-
-.projects-description li {
-    margin-bottom: 2px;
-    padding-bottom: 2px;
-}
 
 /* Responsive */
 @media (max-width: 600px) {
@@ -306,5 +339,14 @@ footer {
 
   .wallpaper-grid {
     grid-template-columns: 1fr;
+  }
+
+  table {
+    font-size: 0.875rem;
+  }
+
+  th,
+  td {
+    padding: 0.5rem 0.6rem;
   }
 }

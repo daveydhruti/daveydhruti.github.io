@@ -20,7 +20,10 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter("formatDate", function(date) {
-    return date.toLocaleDateString("en-US", {
+    // Convert string to Date object if needed
+    const dateObj = typeof date === 'string' ? new Date(date) : date;
+    
+    return dateObj.toLocaleDateString("en-US", {
       year: "numeric",
       month: "long",
       day: "numeric"
@@ -58,7 +61,7 @@ module.exports = function(eleventyConfig) {
       input: "src",
       output: "public",
       includes: "_includes",
-      data: "_data"
+      data: "_data",
     }
   };
 };
