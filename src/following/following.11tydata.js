@@ -15,6 +15,10 @@ module.exports = {
       url: "https://lyra.horse/"
     },
     {
+      name: "Tanishq Kumar",
+      url: "https://tanishqkumar.github.io/"
+    },
+    {
       name: "Riya Bisht",
       url: "https://riyabisht.com/"
     },

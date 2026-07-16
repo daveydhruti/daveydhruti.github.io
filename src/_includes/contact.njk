@@ -11,9 +11,11 @@
     {% include "nav.njk" %}
     
     <h1>{{ title }}</h1>
+    {% if intro %}
     <section class="intro">
       <p>{{ intro }}</p>
     </section>
+    {% endif %}
   </header>
 
   <main>

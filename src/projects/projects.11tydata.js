@@ -1,7 +1,7 @@
 module.exports = {
   projects: [
     {
-      semester: "MSc Projects",
+      semester: "M.Sc. Projects",
       projects: [
         {
           title: "Scalable Machine Learning with PySpark on HPC",
@@ -96,14 +96,14 @@ module.exports = {
       id: "snn-reverse-replay",
       title: "Spiking Neural Network Model of Hippocampal Reverse Replay",
       authors: ["Dhruti Davey", "Eleni Vasilaki"],
-      venue: "MSc Dissertation – University of Sheffield, 2024–2025",
+      venue: "M.Sc. Dissertation – University of Sheffield, 2024–2025",
       description: [
         "Converted a rate-based hippocampal reverse-replay Reinforcement Learning model into a Spiking Neural Network, encoding spatial position via Poisson-firing place cells and modelling action selection with LIF neurons.",
         "Simulated a navigation agent performing biological reverse trajectory replay, mirroring hippocampal memory consolidation mechanisms to accelerate reinforcement learning.",
         "Validated that the spiking model preserved task performance equivalent to the original rate-based model, while significantly increasing biological plausibility of the architecture."
       ],
       tags: ["Neuromorphic Algorithms", "Spiking Neural Networks", "Reinforcement Learning", "Hippocampal Replay", "Leaky Integrate-and-Fire", "Poisson Spiking Neurons", "Place Cells", "Spatial Navigation", "Biologically Plausible AI"],
-      links: { pdf: "/documents/2025/snn-reverse-replay.pdf", code: "https://gitlab.com/daveydhruti-msc-projects/snn-reverse-replay" } 
+      links: { pdf: "/documents/2025/snn-reverse-replay.pdf", code: "https://gitlab.com/daveydhruti-M.Sc.-projects/snn-reverse-replay" } 
     },
   ],
   publications: [
@@ -125,14 +125,14 @@ module.exports = {
     {
       id: "snn_reverse_replay",
       title: "SNN Model of Hippocampal Reverse Replay",
-      type: "MSc Dissertation",
+      type: "M.Sc. Dissertation",
       date: "Jan. 2024 -- Sept. 2025",
       description: [
         "Implemented an RL decision-making model, converting rate-based neurons to spiking neurons.",
         "Modelled agent state representation via Poisson firing & action-selection policy with LIF neurons.",
         "Preserved task performance over baseline while evaluating agent behaviour across policy variants.",
       ],
-      links: { pdf: "/documents/2025/snn-reverse-replay.pdf", code: "https://gitlab.com/daveydhruti-msc-projects/snn-reverse-replay" } 
+      links: { pdf: "/documents/2025/snn-reverse-replay.pdf", code: "https://gitlab.com/daveydhruti-M.Sc.-projects/snn-reverse-replay" } 
     },
     {
       title: "Large Language Model-based Intrusion Detection",

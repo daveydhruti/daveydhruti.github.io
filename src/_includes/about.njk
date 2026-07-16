@@ -68,6 +68,7 @@
       {% endfor %}
     </section>
 
+    {% if experience %}
     <section class="experience">
       <h2>Experience</h2>
       {% for job in experience %}
@@ -77,6 +78,7 @@
       </article>
       {% endfor %}
     </section>
+    {% endif %}
 
     {% if awards %}
       <section class="awards">

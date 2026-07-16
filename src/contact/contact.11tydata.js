@@ -1,5 +1,4 @@
 module.exports = {
-  intro: "Feel free to reach out!",
   email: "daveydhruti@duck.com",
   social: {
     gitlab: { handle: "@daveydhruti", url: "https://gitlab.com/daveydhruti" },

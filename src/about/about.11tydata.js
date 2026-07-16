@@ -1,5 +1,8 @@
 module.exports = {
-  intro: "I recently graduated from the University of Sheffield with an MSc in Cybersecurity and AI. I am currently exploring roles in AI Engineering and Research, while independently investigating spiking neural networks as I prepare for PhD applications in neuromorphic algorithms.",
+  intro: "I recently graduated from the University of Sheffield with an M.Sc. in Cybersecurity and AI. I am currently exploring roles in AI Engineering and Research, while independently investigating spiking neural networks as I prepare for Ph.D. applications in neuromorphic algorithms.",
+  body: [
+    "These are the modules I took during my undergraduate and master's.",
+  ],
   education: [
     { 
       degree: "M.Sc. Cybersecurity and Artificial Intelligence", 
@@ -110,10 +113,10 @@ module.exports = {
       ]
     }
   ],
-  experience: [
-    { role: "Teaching Assistant", org: "Heriot-Watt University, Dubai", period: "Sept. 2023\u2013April 2024" },
-    { role: "Software Engineering Intern", org: "DevelopL", period: "Aug. 2023\u2013Oct. 2023" }
-  ],
+  // experience: [
+  //   { role: "Teaching Assistant", org: "Heriot-Watt University, Dubai", period: "Sept. 2023\u2013April 2024" },
+  //   { role: "Software Engineering Intern", org: "DevelopL", period: "Aug. 2023\u2013Oct. 2023" }
+  // ],
   // interests: [
   //   "climbing"
   // ]
