@@ -10,11 +10,13 @@
   <header>
     {% include "nav.njk" %}
 
-    <a href="/notes/" class="back-link">&larr; Back to Notes</a>
     <h1>{{ title }}</h1>
   </header>
 
   <main>
+    {% for tag in tags %}
+      <span class="tag">{{ tag }}</span>
+    {% endfor %}
     {{ content | safe }}
   </main>
 

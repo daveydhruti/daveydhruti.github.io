@@ -283,25 +283,25 @@ section {
   margin-top: 0.5rem;
 }
 
-.notes-list {
+.writings-list {
   margin-top: 2rem;
 }
 
-.note-item {
+.writing-item {
   padding: 1rem 0 0;
   border-bottom: 1px solid #e0d6cc;
 }
 
-.note-item:last-child {
+.writing-item:last-child {
   border-bottom: none;
 }
 
-.note-item h2 {
+.writing-item h2 {
   font-size: 1.25rem;
   margin: 0 0 0.25rem;
 }
 
-.note-date {
+.writing-date {
   color: #999;
   font-size: 0.85rem;
   margin-bottom: 0.5rem;
@@ -312,7 +312,7 @@ section {
   margin: 0 0 2rem;
 }
 
-.note-tags {
+.writing-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
@@ -462,6 +462,12 @@ footer {
 .wallpaper-image .download-icon:hover {
   background: rgba(0,0,0,0.8);
 }
+hr {
+  border: none;
+  border-top: 1px solid #e0d6cc;
+  margin: 2rem 0;
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   body {

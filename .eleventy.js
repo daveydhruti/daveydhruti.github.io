@@ -13,8 +13,8 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.setLibrary("md", markdownLibrary);
 
-  eleventyConfig.addCollection("notes", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/_notes/*.md").sort((a, b) => {
+  eleventyConfig.addCollection("writings", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/_writings/*.md").sort((a, b) => {
       return b.date - a.date;
     });
   });
