@@ -7,7 +7,7 @@ module.exports = {
           title: "Scalable Machine Learning with PySpark on HPC",
           type: "Academic Project",
           module: "COM6012 -- Scalable Machine Learning",
-          date: "Feb. 2025 -- Mar. 2025",      
+          date: "Feb. 2025 -- Mar. 2025",
           description: [
             "Processed large-scale datasets on HPC using PySpark, mining NASA web logs with distributed aggregations.",
             "Tuned Logistic Regression, Poisson Regression, & ALS collaborative filtering via cross-validated grid search.",
@@ -19,7 +19,7 @@ module.exports = {
           title: "Feedforward Neural Network for News Topic Classification",
           type: "Academic Project",
           module: "COM6513 -- Natural Language Processing",
-          date: "Feb. 2025",      
+          date: "Feb. 2025",
           description: [
             "Built a Feedforward Neural Network from scratch in NumPy, implementing backpropagation,ReLU, softmax, cross-entropy loss, and dropout for 3-class news article classification.",
             "Benchmarked randomly initialised embeddings against frozen GloVe pre-trained embeddings, achieving up to 87.9% test accuracy via SGD with systematic hyperparameter tuning.",
@@ -31,20 +31,20 @@ module.exports = {
           title: "Unsupervised Learning and Deep Classification on Fashion MNIST",
           type: "Academic Project",
           module: "COM6509",
-          date: "Dec. 2024",      
+          date: "Dec. 2024",
           description: [
             "Applied K-Means clustering and PCA (3-component dimensionality reduction) to Fashion MNIST, visualising cluster quality against true labels in reduced feature space.",
             "Trained and benchmarked Logistic Regression, RNN, CNN, and a Fully Connected CNN in PyTorch, evaluating training, validation, and test accuracy across all architectures.",
             "Analysed complexity-performance trade-offs across models, implementing structured training loops with cross-entropy loss and batch-based data loading throughout."
           ],
           tags: [
-            "Unsupervised Learning", "Deep Learning", "PyTorch", "CNN", "RNN", "Logistic Regression", "K-Means Clustering", "PCA", "Dimensionality Reduction", "Image Classification", "Fashion MNIST", "Cross-Entropy Loss", "Model Comparison", "Computer Vision" 
+            "Unsupervised Learning", "Deep Learning", "PyTorch", "CNN", "RNN", "Logistic Regression", "K-Means Clustering", "PCA", "Dimensionality Reduction", "Image Classification", "Fashion MNIST", "Cross-Entropy Loss", "Model Comparison", "Computer Vision"
           ]
         },
         {
           title: "Probabilistic Bee Path Tracking with Gaussian Basis Regression",
           type: "Academic Project",
-          date: "Nov. 2024",      
+          date: "Nov. 2024",
           description: [
             "Implemented a probabilistic regression model using Gaussian Radial Basis Functions to reconstruct bee flight trajectories from noisy 2D sensor observations.",
             "Derived and minimised a regularised negative log-likelihood objective, fitting 20 model parameters via numerical optimisation using scipy.optimize.minimize.",
@@ -57,39 +57,96 @@ module.exports = {
         {
           title: "Denoising Autoencoder on CIFAR-10",
           type: "Academic Project",
-          date: "Dec. 2024",      
+          date: "Dec. 2024",
           description: [
             "Built a convolutional denoising autoencoder in PyTorch using Conv2d and ConvTranspose2d layers to learn compressed latent representations of CIFAR-10 images.",
             "Trained the model to reconstruct clean images from synthetically corrupted inputs, evaluating reconstruction error on a held-out noisy test set.",
             "Saved and reloaded model weights for inference, qualitatively and quantitatively comparing denoised outputs against original images to assess reconstruction quality."
           ],
-          tags:[
+          tags: [
             "Autoencoder", "Denoising", "PyTorch", "CNN", "Conv2d", "ConvTranspose2d", "CIFAR-10", "Image Reconstruction", "Representation Learning", "Computer Vision", "Deep Learning", "Model Serialisation"
           ]
+        },
+        { 
+          title: "Digital Forensics Investigation Lab", 
+          description: [
+            "Analysed disk images and memory dumps using Autopsy, FTK, and Volatility to recover digital artefacts and reconstruct event timelines in Windows environments.", 
+            "Captured and inspected network traffic with Wireshark to identify indicators of compromise, complemented by password analysis using John the Ripper.", 
+            "Documented findings following structured forensic procedures, maintaining chain of custody and producing professional evidence reports suitable for investigative use."
+          ], 
+          tags: ["Digital Forensics", "Memory Forensics", "Disk Forensics", "Autopsy", "FTK", "Volatility", "Wireshark", "John the Ripper", "Network Traffic Analysis", "Incident Response", "Chain of Custody", "Cybersecurity"]
+        },
+        { 
+          title: "SoK: Intrusion Detection for Automotive and Autonomous Vehicle Systems", 
+          description: [
+            "Co-authored a Systematization of Knowledge (SoK) paper surveying Intrusion Detection Systems for automotive networks, covering CAN bus and V2X communication protocols and their security vulnerabilities.", 
+            "Developed a two-dimensional IDS taxonomy categorising 20+ systems by algorithm type (timing, rule, entropy, specification, ML, and deep learning) and attack type under the CIA triad, analysing systems including CANShield, EdgeTDC, and MULSAM.", 
+            "Critically evaluated trade-offs between detection accuracy, computational cost, and real-world deployability, identifying open challenges and proposing future directions including federated learning and security-by-design for next-generation protocols."
+          ], 
+          tags: ["Cybersecurity", "Intrusion Detection", "Automotive Security", "CAN Bus", "V2X", "Autonomous Vehicles", "Machine Learning", "Deep Learning", "Federated Learning", "Taxonomy", "Research", "SoK", "Academic Writing", "CIA Triad"]
         },
       ],
     },
     {
       semester: "BSc Year 4 Projects",
-      // projects: [
-      //   {
-      //     title: "ANN with Particle Swarm Optimisation",
-      //     type: "Academic Project",
-      //     date: "Feb. 2025 -- Mar. 2025",      
-      //     description: [
-      //       "Implemented an ANN and PSO algorithm entirely from scratch in Python without external ML libraries.",
-      //       "Designed a Tkinter GUI to visualise training progress and model behaviour interactively.",
-      //       "Structured into modular components separating optimisation logic, model architecture, and interface."
-      //     ]
-      //   },
-      // ]
+      projects: [             
+        { 
+          title: "A Study on Buffer Overflow Attacks", 
+          description: [ 
+            "Exploited stack-based buffer overflows in vulnerable C programs across Windows XP, Windows 11, and Linux to achieve arbitrary code execution, demonstrating cross-platform offensive security fundamentals.",
+            "Wrote Bash scripts on Kali Linux to open a remote shell on a Windows 11 target, simulating a real-world post-exploitation scenario.",
+            "Used GDB and pwntools to debug binaries and develop proof-of-concept exploits, evaluating mitigations including stack canaries, ASLR, and DEP/NX.",
+          ], 
+          tags: ["Buffer Overflow", "Exploit Development", "Offensive Security", "GDB", "pwntools", "Kali Linux", "C", "ASLR", "Penetration Testing"]
+        },
+        { 
+          title: "ANN with Particle Swarm Optimisation", 
+          description: [
+            "Implemented an Artificial Neural Network and Particle Swarm Optimisation algorithm entirely from scratch in Python, without any external ML libraries.", 
+            "Designed an interactive Tkinter GUI to visualise training progress and model behaviour in real time, enabling intuitive exploration of the optimisation process.", 
+            "Structured the project into modular components, cleanly separating optimisation logic, model architecture, and the user interface for maintainability and clarity."
+          ], 
+          tags: ["Artificial Neural Networks", "Particle Swarm Optimisation", "Python", "Tkinter"]
+        },
+      ]
     },
     {
       semester: "BSc Year 3 Projects",
+      projects: [
+        { 
+          title: "MemoriesAR — Full-Stack Mobile Application", 
+          description: [
+            "Co-developed a full-stack platform with a mobile app and web admin panel using React, React Native, Node.js, MySQL, and Firebase Authentication.", 
+            "Built and tested backend APIs for authentication and database access, ensuring reliable integration between frontend clients and server-side services.", 
+            "Worked in an Agile/Scrum environment, contributing to sprint planning and iterative feature development across a team."
+          ], 
+          tags: ["React", "React Native", "Node.js", "MySQL", "Firebase", "REST APIs", "Full-Stack Development", "Mobile Development", "Agile", "Scrum", "Team Collaboration"]
+        },
+      ]
     },
     {
       semester: "BSc Year 2 Projects",
-    }
+      projects: [
+        { 
+          title: "Mastermind Game — C & ARM Assembly on Raspberry Pi", 
+          description: [
+            "Implemented a Mastermind game in C with inline ARM Assembly on a Raspberry Pi, interfacing with physical components including LEDs, LCD display, and buttons via GPIO.", 
+            "Managed low-level register usage, execution flow, and direct hardware interaction at the assembly level, maintaining correctness across C and assembly boundaries.", 
+            "Debugged complex cross-language behaviour in a hardware-software co-design context, demonstrating hands-on embedded systems development with real physical components."
+          ], 
+          tags: ["ARM Assembly", "C", "Raspberry Pi", "Embedded Systems", "Hardware Programming", "Low-Level Programming", "GPIO", "LCD Display", "Inline Assembly", "Hardware-Software Interface"] 
+        },
+        { 
+          title: "LSB Steganography Tool in C", 
+          description: [
+            "Built a command-line steganography tool in C to encode and decode hidden messages within PPM images using Least Significant Bit (LSB) encoding.", 
+            "Implemented bit manipulation logic to embed secret data into image pixel values with minimal visual distortion, preserving image integrity across encode-decode cycles.", 
+            "Developed robust error handling to manage edge cases such as oversized messages, malformed image files, and invalid inputs, ensuring reliable CLI operation."
+          ], 
+          tags: ["C", "Steganography", "LSB Encoding", "PPM Images", "CLI", "Image Processing", "Low-Level Programming", "Bit Manipulation", "Error Handling"]
+        },
+      ]
+    },
   ],
   selected_projects: [
     {
@@ -103,7 +160,7 @@ module.exports = {
         "Validated that the spiking model preserved task performance equivalent to the original rate-based model, while significantly increasing biological plausibility of the architecture."
       ],
       tags: ["Neuromorphic Algorithms", "Spiking Neural Networks", "Reinforcement Learning", "Hippocampal Replay", "Leaky Integrate-and-Fire", "Poisson Spiking Neurons", "Place Cells", "Spatial Navigation", "Biologically Plausible AI"],
-      links: { pdf: "/documents/2025/snn-reverse-replay.pdf", code: "https://gitlab.com/daveydhruti-M.Sc.-projects/snn-reverse-replay" } 
+      links: { pdf: "/documents/2025/snn-reverse-replay.pdf", code: "https://gitlab.com/daveydhruti-M.Sc.-projects/snn-reverse-replay" }
     },
   ],
   publications: [
@@ -118,7 +175,7 @@ module.exports = {
         "Processed structured network traffic data to identify and flag potential security threats."
       ],
       tags: ["cybersecurity", "large language models", "intrusion detection", "network security"],
-      links: { pdf: "https://link.springer.com/chapter/10.1007/978-981-96-1758-6_26", code: "https://gitlab.com/daveydhruti-bsc-projects/llm-ids"}
+      links: { pdf: "https://link.springer.com/chapter/10.1007/978-981-96-1758-6_26", code: "https://gitlab.com/daveydhruti-bsc-projects/llm-ids" }
     },
   ],
   archive: [
@@ -132,12 +189,12 @@ module.exports = {
         "Modelled agent state representation via Poisson firing & action-selection policy with LIF neurons.",
         "Preserved task performance over baseline while evaluating agent behaviour across policy variants.",
       ],
-      links: { pdf: "/documents/2025/snn-reverse-replay.pdf", code: "https://gitlab.com/daveydhruti-M.Sc.-projects/snn-reverse-replay" } 
+      links: { pdf: "/documents/2025/snn-reverse-replay.pdf", code: "https://gitlab.com/daveydhruti-M.Sc.-projects/snn-reverse-replay" }
     },
     {
       title: "Large Language Model-based Intrusion Detection",
       type: "BSc Dissertation",
-      date: "Feb. 2025 -- Mar. 2025",      
+      date: "Feb. 2025 -- Mar. 2025",
       description: [
         "Fine-tuned LLMs for context-aware classification using a retrieval-augmented inference pipeline.",
         "Processed structured NetFlow data to construct a contextual feature store for model input.",
