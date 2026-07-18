@@ -2,6 +2,7 @@
 layout: writing-item.njk
 title: "How I Met Your IP Address"
 date: 2026-07-18
+tags: ["cybersecurity", "social engineering", "phishing", "true story"]
 ---
 
 My professor received an email, seemingly from a compromised colleague's account, claiming to be in an emergency and desperately requiring gift card codes sent over right away. Classic social engineering. Instead of ignoring it, he decided to have some fun.
