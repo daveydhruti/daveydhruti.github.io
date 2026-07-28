@@ -197,6 +197,13 @@ section {
   margin-top: 2.5rem;
 }
 
+/* Horizontal rules in markdown content */
+main hr {
+  border: 0;
+  border-top: 1px solid #e0d6cc;
+  margin: 2.5rem 0;
+}
+
 .modules-container {
   margin: 0 0 1.5rem;
   padding: 0 1.5rem;
