@@ -143,7 +143,8 @@ module.exports = {
             "Implemented bit manipulation logic to embed secret data into image pixel values with minimal visual distortion, preserving image integrity across encode-decode cycles.", 
             "Developed robust error handling to manage edge cases such as oversized messages, malformed image files, and invalid inputs, ensuring reliable CLI operation."
           ], 
-          tags: ["C", "Steganography", "LSB Encoding", "PPM Images", "CLI", "Image Processing", "Low-Level Programming", "Bit Manipulation", "Error Handling"]
+          tags: ["C", "Steganography", "LSB Encoding", "PPM Images", "CLI", "Image Processing", "Low-Level Programming", "Bit Manipulation", "Error Handling"],
+	  links: { code: "https://gitlab.com/daveydhruti-bsc-projects/steganography" }
         },
       ]
     },
