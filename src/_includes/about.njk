@@ -12,8 +12,8 @@
     <h1>{{ title }}</h1>
     <section class="intro">
       <p>{{ intro | safe }}</p>
-      {% if background %}
-        <p>{{ background | safe }}</p>
+      {% if body %}
+        <p>{{ body | safe }}</p>
       {% endif %}
     </section>
   </header>
